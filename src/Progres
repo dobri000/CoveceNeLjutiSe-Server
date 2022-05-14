@@ -1,0 +1,16 @@
+Pokretanje servera
+Slusanje zahteva
+Pokretanje klijentskih niti
+Azuriranje podataka u serveru i nitima
+
+/Klijentska nit
+Slusanje poruka
+1 - kreiraj sobu
+TODO 2 - pridruzi se sobi
+TODO 3 - izlaz
+
+//Kreiranje sobe
+Nalazak cetvorocifrenog broja koji se ne nalazi u listi
+Pravljenje sobe
+Azuriranje listi
+Slanje broja sobe klijentu

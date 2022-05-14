@@ -22,7 +22,7 @@ public class Main {
                 Socket socket = serverSocket.accept();
                 KlijentskaNit klijentskaNit = new KlijentskaNit(socket);
                 listaKlijenata.add(klijentskaNit);
-                azurirajListe();
+                azurirajListe(listaKlijenata, listaSoba);
                 klijentskaNit.start();
             }
         } catch (IOException e) {
@@ -31,7 +31,9 @@ public class Main {
     }
 
     //AZURIRANJE LISTA NAKON IZMENA
-    public static void azurirajListe(){
+    public static void azurirajListe(LinkedList<KlijentskaNit> listKlijenata, LinkedList<Soba> listSoba){
+        listaKlijenata = listKlijenata;
+        listaSoba = listSoba;
         for(KlijentskaNit klijentskaNit : listaKlijenata){
             klijentskaNit.listaSoba = listaSoba;
             klijentskaNit.listaKlijenata = listaKlijenata;
